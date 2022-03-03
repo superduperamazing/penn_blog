@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PA blog</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bfu1dan.css">
+    <style media="screen">
+      body {
+        background-color: white;
+      }
+      .snow {
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <style media="screen">
+    font-family: ff-cocon-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    </style>
+
+    <script type="text/javascript">
+      var t = new Date();
+      var mn = t.getMonth();
+      var d = t.getDate();
+      var h = t.getHours();
+      var m = t.getMinutes();
+      var s = t.getSeconds();
+      var mil = t.getMilliseconds();
+      var hours = Math.abs(h - 9);
+      var minutes = Math.abs(m - 59);
+      var seconds = Math.abs(s - 59);
+      var milliseconds = Math.abs(mil - 999);
+
+      if (mn == 0) {   // January
+        var days = d;
+      }
+      if (mn == 1) {  // Febuary
+        var days = d + 31;
+      }
+      if (mn == 2) {  // March
+        var days = d + 59;
+      }
+      if (mn == 3) {  // April
+        var days = d + 90;
+      }
+      if (mn == 4) {  // May
+        var days = d + 120;
+      }
+      if (mn == 5) {  // June
+        var days = d + 151;
+      }
+      if (mn == 6) { // July
+        var days = d + 181;
+      }
+      if (mn == 7) { // August
+        var days = d + 212;
+      }
+      if (mn == 8) { // September
+        var days = d + 243;
+      }
+      if (mn == 9) { // October
+        var days = d + 273;
+      }
+      if (mn == 10) { // November
+        var days = d + 304;
+      }
+      if (mn == 11) { // December
+        var days = d + 334;
+      }
+
+
+      days = Math.abs(days - 69);
+
+
+      document.write("<span style=\"color:blue;font-size:2em;font-family:ff-cocon-pro, sans-serif;\">We have " + days + " days, " + hours + " hours, " + minutes + ' minutes, and ' + seconds + " seconds I take off to Pennsylvania.<\/span>");
+        setTimeout(function(){
+         window.location.reload(1);
+      }, 1000);
+    </script>
+    <h1>Welcome to the official Jay Christaldi PA Trip blog! Here I will post pictures, videos, and little notes of what I'm doing! Stay tuned to see what I upload.</h1>
+  </body>
+</html>
